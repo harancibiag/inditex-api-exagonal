@@ -11,9 +11,18 @@ inditex-api\src\main\java\es\inditex\inditexapi\InditexApiApplication.java
 #### Pantalla principal
 <img src="/src/main/resources/static/pantalla1.png" width="800"/>
 
+### Implementación de ARQUITECTURA EXAGONAL Y MAPEO (MAPSTRUCT) 
+Se creo una nueva app bajo la ARQUITECTURA EXAGONAL, separa negocio, puertos, 
+se definen interfaces y adaptadores y se concretan detalles.
+TAMBIEN lo aplique a los objetos del SpringSecurity, migrandolo totalmente
+a la nueva arquitectura y mapeando sus entidades.
+<img src="/src/main/resources/static/arquitectura-exagonal.png" width="800"/>
+<img src="/src/main/resources/static/arquitectura-exagonal1.png" width="600"/>
+
 ### Implementación de Spring Security (/auth/log-in)
-Se implementa seguridad (no solicitada va como valor agregado) con la 
-finalidad de que no accesan usuarios no autorizados, los datos para ingresar son:
+Como ya lo explique se mantiene la seguridad (bajo arquitectura exagonal, no solicitada, 
+va como valor agregado) con la finalidad de que no accesan usuarios no autorizados, 
+los datos para ingresar son:
 username -> ADMIN    clave->1234
 <img src="/src/main/resources/static/pantalla5.png" width="800"/>
 
@@ -40,23 +49,15 @@ El retorno va con lo solicitado que para el caso de los ejemplos es:
 }
 <img src="/src/main/resources/static/pantalla4.png" width="800"/>
 
-### TEST DE CLASES 
-<img src="/src/main/resources/static/pantalla2.png" width="400"/>
-
-Se implemento el testeo de las clases utilizando mockito, 
-se realizan 5 test comprobando que deben retornar los valores
-correctos, para validarlo debe ejecutarse el programa java
-PriceServiceImplTest.java ubicado en la 
-inditex-api\src\test\java\es\inditex\inditexapi\service\implementation
-
 ### TEST INTEGRAL
 <img src="/src/main/resources/static/pantalla3a.png" width="600"/>
 
-Se implemento el testeo integral como servicio, realizandose tambien
+Se implemento el testeo integral como servicio utilizando mockito, realizandose tambien
 los 5 test validando que, esta vez el servicio web, retorne los valores
-correctos, para validarlo debe ejecutarse el programa java PriceControllerIntegrationTest.java
+correctos, los cuales recorren toda la ARQUITECTURA EXAGONAL, para validarlo 
+debe ejecutarse el programa java IntegrationTest.java
 ubicado en
-inditex-api\src\test\java\es\inditex\inditexapi\presentation\controller
+D:\Projects3\inditext-api\src\test\java\es\inditex\inditexapi\tests\IntegrationTest.java
 
 ### RESUMEN DE LA CODIFICACION
 Se ejecutó lo solicitado, aplicando para la base de datos H2.
