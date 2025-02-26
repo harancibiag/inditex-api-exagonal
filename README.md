@@ -50,7 +50,7 @@ PriceServiceImplTest.java ubicado en la
 inditex-api\src\test\java\es\inditex\inditexapi\service\implementation
 
 ### TEST INTEGRAL
-<img src="/src/main/resources/static/pantalla3.png" width="400"/>
+<img src="/src/main/resources/static/pantalla3a.png" width="600"/>
 
 Se implemento el testeo integral como servicio, realizandose tambien
 los 5 test validando que, esta vez el servicio web, retorne los valores
