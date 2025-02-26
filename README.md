@@ -61,9 +61,9 @@ ubicado en
 D:\Projects3\inditext-api\src\test\java\es\inditex\inditexapi\tests\IntegrationTest.java
 
 ### RESUMEN DE LA CODIFICACION
-Se ejecutó lo solicitado, aplicando para la base de datos H2.
+Se ejecutó lo solicitado, aplicando la ARQUITECTURA EXAGONAL y el mapeo de entidades solicitado
 
-la misma nomenclatura de variables, aplicando CLEAN-CODE y SOLID separando 
+Se mantiene el mismo uso de la base de datos H2, nomenclatura de variables, aplicando CLEAN-CODE y SOLID separando 
 las validaciones del servicio en si para mejorar el mantenimiento/escalabilidad 
 de las mismas sin afectar al servicio principal.
 
