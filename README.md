@@ -9,7 +9,7 @@ Se debe ejecutar el programa java
 inditex-api\src\main\java\es\inditex\inditexapi\InditexApiApplication.java
 
 #### Pantalla principal
-<img height="400" src="/src/main/resources/static/pantalla1.png" width="400"/>
+<img src="/src/main/resources/static/pantalla1.png" width="400"/>
 
 ### Implementación de Spring Security (/auth/log-in)
 Se implementa seguridad (no solicitada va como valor agregado) con la 
