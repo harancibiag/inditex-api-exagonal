@@ -16,6 +16,7 @@ Se creo una nueva app bajo la ARQUITECTURA EXAGONAL, separa negocio, puertos,
 se definen interfaces y adaptadores y se concretan detalles.
 TAMBIEN lo aplique a los objetos del SpringSecurity, migrandolo totalmente
 a la nueva arquitectura y mapeando sus entidades.
+.
 <img src="/src/main/resources/static/arquitectura-exagonal.png" width="500"/>
 <img src="/src/main/resources/static/arquitectura-exagonal1.png" width="500"/>
 
