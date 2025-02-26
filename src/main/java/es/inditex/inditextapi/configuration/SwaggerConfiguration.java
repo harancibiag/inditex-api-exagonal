@@ -14,8 +14,8 @@ import org.springframework.http.HttpHeaders;
 @OpenAPIDefinition(
         info = @Info(
                 title = "API INDITEXT",
-                description = "Retorna lista de Precios por fecha especifica",
-                version = "1.0.0",
+                description = "(DESARROLLADO BAJO ARQUITECTURA EXAGONAL) Retorna lista de Precios por fecha especifica",
+                version = "2.0.0",
                 contact = @Contact(
                         name = "Hans Arancibia Garcia",
                         url = "",
